@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preview">
+        <h1>Preview Page</h1>
+        <div class="divide"></div>
+        <div>
+            <h3>Student Information</h3><br>
+            
+       </div>
+
+
+    </div>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var formData = Object.fromEntries(urlParams.entries());
+        for(var key in formData){
+           document.write("<p> <strong>" + key +": "+ "</strong>" + formData[key]+"</p> <br>");
+
+        }
+    </script>
+</body>
+</html

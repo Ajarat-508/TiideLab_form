@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiideLab signup Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div id="container">
+    <form action=""  name="signupForm" id="form" enctype="application/x-www-form-urlencoded">
+        
+                <div class="logo">
+             <img src="logo.jpg" alt="This is my logo">
+            </div>
+            <div class="form-hs">
+                <h2 class="form-heading">Student Registration Form</h2>
+                <p>Fill out the form to apply for the training courses. You can consider your application accepted after you receive a
+                    <br> confirmation email</p>
+                     </div>
+                     
+                     <div class="input-field">
+            <h3>Student Information</h3>
+       <input type="text"  name="firstName" id="firstName" placeholder="First Name" required style="width: 30.5%;"> 
+       <input type="text"  name="middleName" id="middleName" placeholder="Middle Name" required style="width: 30.5%;"> 
+       <input type="text"  name="lastName" id="lastName" placeholder="Last Name" required style="width: 30.5%;">
+       <input placeholder="Date of Birth" type="text" onfocus="(this.type = 'date')"  id="DoB" style="width: 47%;"> 
+       <input type="number" name="StudentID" id="StudentID" placeholder="Student ID" style="width: 47%;">
+        
+            <h3>Address</h3>
+       <input type="text" name="address" id="address" placeholder="Street Address" style="width: 97%";> 
+       <input type="text" name="city" id="city" placeholder="city" required style="width: 47.5%";>
+       <input type="text" name="state" id="state" placeholder="State/Province" required style="width: 47.5%";>
+       <input type="text" name="country" id="country" placeholder="Country" style="width: 47.5%";>
+       <input type="number" name="zipcode" id="zipcode" placeholder="ZIP Code" style="width: 47.5%";>
+        
+            <h3>Contact Information</h3>
+       <input type="email" name="email" id="email" placeholder="Email" required style="width: 47.5%";>
+       <input type="email" name="confirmemail" id="confirmemail" style="width: 47.5%";> <br><br>
+
+       <div id="record">
+        <input class="add" type="button" value="+ Add new record">
+        <h3>Courses<span class="course">*</span></h3>
+        <select name="course" id="courses">
+            <option value="course">Course</option>
+            <option value="Front-end">Front-End</option>
+            <option value="Back-end">Back-End</option>
+            <option value="Fullstack">FullStack</option>
+        </select>
+        <select name="level" id="level">
+            <option value="Level">Level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advance">Advance</option>
+        </select>
+        <select name="lang" id="lang">
+            <option value="Language">Language</option>
+            <option value="Hausa">Hausa</option>
+            <option value="igbo">Igbo</option>
+            <option value="Yoruba">Yoruba</option>
+        </select>
+        <select class="form-select" name="date" id="date">
+            <option value="Start">Start Date</option>
+            <option value="2015">2015</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+    </div>
+    <textarea name="comment" id="comment" placeholder="Comments" cols="30" rows="10"></textarea> <br>
+    <input  class="submit-btn" type="submit" value="SEND REQUEST">
+    </form>
+</div>
+</body>
+</html>
